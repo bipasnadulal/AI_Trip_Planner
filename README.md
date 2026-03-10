@@ -59,7 +59,7 @@ The planner remembers the conversation so follow‑ups are meaningful (e.g., cla
                        v
             +---------------------+
             | Formatted Itinerary |
-            | (Morning,Afternoon, |       |
+            | (Morning,Afternoon, |       
             | Evening)            |
             +---------------------+
                        |
@@ -68,5 +68,5 @@ The planner remembers the conversation so follow‑ups are meaningful (e.g., cla
             | Display in UI       |
             | (Streamlit Chat)   |
             +---------------------+
-
+```
 [AI Trip Planner](https://aitripplanner-8ywl5ytnuenugpmok5w6r4.streamlit.app/)
