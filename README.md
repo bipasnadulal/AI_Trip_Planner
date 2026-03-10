@@ -29,4 +29,43 @@ The Streamlit app works like a chat, users can type questions and get responses 
 The planner remembers the conversation so follow‑ups are meaningful (e.g., clarifying mood or budget).
 
 ---
+
+# Simple Visualization
+            +---------------------+
+            |  User Input         |
+            | (Destination, Mood, |
+            | Interests, Budget) |
+            +----------+----------+
+                       |
+                       v
+            +---------------------+
+            |  Trip Planner Agent  |
+            |  (Gemini AI Model)  |
+            +----------+----------+
+                       |
+       +---------------+-----------------+
+       |                                 |
+       v                                 v
++--------------+                  +-----------------+
+| Google Search|                  | Internal Reasoning|
+| Tool fetches |                  | (interprets mood,|
+| real-time    |                  | interests, budget|
+| info/events  |                  | & plans itinerary)|
++--------------+                  +-----------------+
+       |                                 |
+       +---------------+-----------------+
+                       |
+                       v
+            +---------------------+
+            | Formatted Itinerary |
+            | (Markdown, Morning, |
+            | Afternoon, Evening)|
+            +---------------------+
+                       |
+                       v
+            +---------------------+
+            | Display in UI       |
+            | (Streamlit Chat)   |
+            +---------------------+
+
 [AI Trip Planner](https://aitripplanner-8ywl5ytnuenugpmok5w6r4.streamlit.app/)
