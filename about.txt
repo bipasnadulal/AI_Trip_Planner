@@ -1,0 +1,20 @@
+This is the Trip Planner agent which uses Gemini-2.5-Flash Model.
+The agent’s purpose is to plan a day trip based on the
+- user’s mood, interests, and budget.
+The agent uses the Google Search tool to gather real-time information.
+The agent has several capabilities:
+- Budget awareness – suggests activities that match the user’s budget (cheap or splurge).
+- Mood matching – adjusts recommendations depending on the user’s mood (relaxing, adventurous, etc.).
+- Real-time information – finds current information about venues and events using Google Search.
+- Daily planning – organizes the trip into morning, afternoon, and evening activities.
+
+Input From the User:
+- mood
+- interests
+- budget
+
+Output From the Agent:
+- a schedule divided into morning, afternoon, and evening
+- recommended places to visit
+- links and opening hours for venues
+- activities that match the user’s budget
