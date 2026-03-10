@@ -10,8 +10,6 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService, Session
 from google.genai.types import Content, Part
 
-from IPython.display import display, Markdown
-
 
 #We configure the API Key so that the Google allows the program to access it and use the AI models
 load_dotenv()
