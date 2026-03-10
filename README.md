@@ -30,7 +30,8 @@ The planner remembers the conversation so follow‑ups are meaningful (e.g., cla
 
 ---
 
-# Simple Visualization
+## Simple Visualization
+```text
             +---------------------+
             |  User Input         |
             | (Destination, Mood, |
@@ -58,8 +59,8 @@ The planner remembers the conversation so follow‑ups are meaningful (e.g., cla
                        v
             +---------------------+
             | Formatted Itinerary |
-            | (Markdown, Morning, |
-            | Afternoon, Evening)|
+            | (Morning,Afternoon, |       |
+            | Evening)            |
             +---------------------+
                        |
                        v
