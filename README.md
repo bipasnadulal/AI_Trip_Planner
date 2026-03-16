@@ -69,4 +69,4 @@ The planner remembers the conversation so follow‑ups are meaningful (e.g., cla
             | (Streamlit Chat)   |
             +---------------------+
 ```
-(AITripPlanner)[https://aitripplanner-01.streamlit.app/]
+[AITripPlanner](https://aitripplanner-01.streamlit.app/)
