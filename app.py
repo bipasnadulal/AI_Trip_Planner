@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import asyncio
 
-os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+# os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 from agent_code import trip_planner_agent, session_service
 from google.adk.runners import Runner
