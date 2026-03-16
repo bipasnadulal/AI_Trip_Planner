@@ -1,7 +1,7 @@
 import os
 import asyncio
-from getpass import getpass
-from dotenv import load_dotenv
+import streamlit as st
+# from dotenv import load_dotenv
 
 import google.generativeai as genai
 from google.adk.agents import Agent
@@ -12,10 +12,12 @@ from google.genai.types import Content, Part
 
 
 #We configure the API Key so that the Google allows the program to access it and use the AI models
-load_dotenv()
+# load_dotenv()
 
 #use API key as an environment variable
-api_key=os.environ["GOOGLE_API_KEY"]
+# api_key=os.environ["GOOGLE_API_KEY"]
+# genai.configure(api_key=api_key)
+api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 print("API Key configured successfully")
