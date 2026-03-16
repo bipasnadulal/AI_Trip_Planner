@@ -1,24 +1,20 @@
 import os
 import asyncio
-import streamlit as st
 from dotenv import load_dotenv
 
-import google.generativeai as genai
-from google.adk.agents import Agent
-from google.adk.tools import google_search
-from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService, Session
-from google.genai.types import Content, Part
 
+import google.generativeai as genai
+from google.adk.agents import Agent  #Agent is the brain of the system
+from google.adk.tools import google_search #pre-built tool
+from google.adk.runners import Runner #task executer
+from google.adk.sessions import InMemorySessionService, Session #stores conversations
+from google.genai.types import Content, Part
 
 #We configure the API Key so that the Google allows the program to access it and use the AI models
 load_dotenv()
-
 #use API key as an environment variable
 api_key=os.environ["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
-# api_key = st.secrets["GOOGLE_API_KEY"]
-# genai.configure(api_key=api_key)
 
 print("API Key configured successfully")
 
@@ -27,13 +23,10 @@ print("API Key configured successfully")
 def create_trip_planner_agent():
   return Agent(
       name="Trip_Planner_Agent",
-      model="gemini-2.0-flash",
+      model="gemini-2.5-flash",
       description="This is the Trip Planner agent which plans a day trip based on the user’s mood, interests, and budget.",
       instruction="""
       You are a Day Trip Planner – an AI that makes fun, full-day trip plans for users.
-      Ask the user for missing information: mood, budget, interests, before planning.
-If all info is present, generate the plan.
-      
         Your Task:
 Turn a user’s mood, interests, and budget into a complete day-trip plan with real, up-to-date details.
 
